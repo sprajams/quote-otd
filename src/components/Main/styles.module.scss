@@ -1,0 +1,32 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgb(197, 232, 214);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 30px;
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: rgb(239, 239, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
