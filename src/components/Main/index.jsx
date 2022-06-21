@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import RefreshOutlinedIcon from "@mui/icons-material/RefreshOutlined";
 import Quote from "../Quote";
 import styles from "./styles.module.scss";
 
@@ -26,6 +27,7 @@ function Main() {
         </a>
         <button className={styles.btn} onClick={getData}>
           REFRESH
+          <RefreshOutlinedIcon />
         </button>
       </div>
     </div>
