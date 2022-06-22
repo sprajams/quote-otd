@@ -17,16 +17,22 @@ function Main() {
       })
     );
   };
-
   return (
     <div className={styles.wrap}>
       <Quote quote={data.quote} author={data.author} />
       <div className={styles.btnContainer}>
-        <a href="/tweet" className={styles.btn}>
-          TWEEET
+        <a
+          href={`https://twitter.com/intent/tweet?text="${data.quote}"%20-${data.author}`}
+          className={styles.btn}
+        >
+          <img
+            src={require("../../assests/icons/twitter.png")}
+            alt="Twitter Logo"
+            className={styles.twitterLogo}
+          ></img>
         </a>
+
         <button className={styles.btn} onClick={getData}>
-          REFRESH
           <RefreshOutlinedIcon />
         </button>
       </div>

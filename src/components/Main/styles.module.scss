@@ -13,20 +13,29 @@
 }
 
 .btnContainer {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
 }
 
 .btn {
-  width: 110px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
   background: rgb(239, 239, 239);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
+}
+.twitterLogo {
+  width: 100%;
+  height: 100%;
 }
